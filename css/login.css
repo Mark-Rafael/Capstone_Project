@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fff;
+}
+
+.container {
+    display: flex;
+    width: 800px;
+    border: 2px solid #007bff;
+}
+
+.logo-section {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+.logo-section img {
+    max-width: 80%;
+    height: auto;
+}
+
+.login-section {
+    width: 50%;
+    padding: 40px;
+    background-color: #007bff;
+    color: #fff;
+}
+
+.login-section h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.login-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-section label {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.login-section input {
+    padding: 10px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.login-section .forgot-password {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #fff;
+    text-decoration: underline;
+    text-align: right;
+    display: block;
+}
+
+.login-section button {
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.login-section p {
+    margin-top: 10px;
+    font-size: 14px;
+}

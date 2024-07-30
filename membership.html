@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SANGKAP Multi-Purpose Cooperative</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="profile">
+                <img src="profile.png" alt="Profile Picture">
+                <p>De Castro, Mark Rafael V.</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">MEMBER APPLICATION</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main>
+            <header>
+                <div class="logo">
+                    <img src="logo.png" alt="Cooperative Logo">
+                </div>
+                <div class="header-text">
+                    <h1>SANGKAP Multi-Purpose Cooperative</h1>
+                    <p>0190 Bulat Ave. Banaybanay, Lipa City, Batangas</p>
+                    <p>Tel. No. (043) 757-0265</p>
+                </div>
+            </header>
+            <form class="membership-form">
+                <h2>MEMBERSHIP INFORMATION</h2>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="form-group">
+                    <label>Civil Status:</label>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="status" value="single"> Single</label>
+                        <label><input type="checkbox" name="status" value="married"> Married</label>
+                        <label><input type="checkbox" name="status" value="widower"> Widower/Widow</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Sex:</label>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="sex" value="male"> Male</label>
+                        <label><input type="checkbox" name="sex" value="female"> Female</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="place_of_birth">Place of Birth:</label>
+                    <input type="text" id="place_of_birth" name="place_of_birth">
+                </div>
+                <div class="form-group">
+                    <label for="date_of_birth">Date of Birth:</label>
+                    <input type="date" id="date_of_birth" name="date_of_birth">
+                </div>
+                <div class="form-group">
+                    <label for="education">Educational Attainment:</label>
+                    <input type="text" id="education" name="education">
+                </div>
+                <div class="form-group">
+                    <label for="occupation">Occupation:</label>
+                    <input type="text" id="occupation" name="occupation">
+                </div>
+                <div class="form-group">
+                    <label for="permanent_address">Permanent Address:</label>
+                    <input type="text" id="permanent_address" name="permanent_address">
+                    <input type="text" id="permanent_zip" name="permanent_zip" placeholder="Zip Code">
+                    <input type="text" id="permanent_tel" name="permanent_tel" placeholder="Tel. No./Active No.">
+                </div>
+                <div class="form-group">
+                    <label for="present_address">Present Address:</label>
+                    <input type="text" id="present_address" name="present_address">
+                    <input type="text" id="present_zip" name="present_zip" placeholder="Zip Code">
+                    <input type="text" id="present_tel" name="present_tel" placeholder="Tel. No./Active No.">
+                </div>
+                <div class="form-group">
+                    <label for="position">Position/Region:</label>
+                    <input type="text" id="position" name="position">
+                </div>
+                <div class="form-group">
+                    <label for="income_gross">Income (Gross):</label>
+                    <input type="text" id="income_gross" name="income_gross">
+                </div>
+                <div class="form-group">
+                    <label for="income_net">Income (Net):</label>
+                    <input type="text" id="income_net" name="income_net">
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="income_period" value="monthly"> Monthly</label>
+                        <label><input type="checkbox" name="income_period" value="daily"> Daily</label>
+                        <label><input type="checkbox" name="income_period" value="yearly"> Yearly</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="other_income">Other Source of Income (Specify):</label>
+                    <input type="text" id="other_income" name="other_income">
+                    <input type="text" id="other_income_monthly" name="other_income_monthly" placeholder="Monthly Income">
+                </div>
+                <div class="form-group">
+                    <label for="spouse_occupation">Occupation of Spouse:</label>
+                    <input type="text" id="spouse_occupation" name="spouse_occupation">
+                    <input type="text" id="spouse_income_gross" name="spouse_income_gross" placeholder="Income (Gross)">
+                    <input type="text" id="spouse_income_net" name="spouse_income_net" placeholder="Income (Net)">
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="spouse_income_period" value="monthly"> Monthly</label>
+                        <label><input type="checkbox" name="spouse_income_period" value="daily"> Daily</label>
+                        <label><input type="checkbox" name="spouse_income_period" value="yearly"> Yearly</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="legal_beneficiaries">Legal Beneficiaries:</label>
+                    <input type="text" id="beneficiary1" name="beneficiary1" placeholder="Relationship">
+                    <input type="text" id="beneficiary2" name="beneficiary2" placeholder="Relationship">
+                    <input type="text" id="beneficiary3" name="beneficiary3" placeholder="Relationship">
+                </div>
+                <div class="form-group">
+                    <label for="real_properties">Real Properties Owned (Specify):</label>
+                    <input type="text" id="real_properties" name="real_properties">
+                </div>
+                <div class="form-actions">
+                    <button type="submit">Submit</button>
+                    <button type="reset">Cancel</button>
+                </div>
+            </form>
+        </main>
+    </div>
+</body>
+</html>
