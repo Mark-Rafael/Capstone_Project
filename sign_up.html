@@ -4,31 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SANGKAP MPC - Sign Up</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/css/sign_up.css">
 </head>
 <body>
     <div class="container">
         <div class="logo-section">
-            <img src="logo.png" alt="SANGKAP MPC Logo">
+            <img src="/assets/logo.jpg" alt="SANGKAP MPC Logo">
         </div>
         <div class="signup-section">
-            <h2>SIGN UP</h2>
-            <form>
-                <label for="fullname">Full Name</label>
-                <input type="text" id="fullname" name="fullname" required>
-                
-                <label for="username">Username</label>
-                <input type="text" id="username" name="username" required>
-                
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" required>
-                
+            <h1>SIGN UP</h1>
+            <form method="post">
+                <div class="txt_field">
+                    <input type="text" required>
+                    <label>Enter Full Name:</label>
+                </div>
+                <div class="txt_field">
+                    <input type="password" required>
+                    <label>Enter Username:</label>
+                </div>
+                <div class="txt_field">
+                    <input type="text" required>
+                    <label>Enter Email Address:</label>
+                </div>
+                <div class="txt_field">
+                    <input type="password" required>
+                    <label>Enter Password:</label>
+                </div>
+            <div class="button">
                 <button type="submit">Sign Up</button>
+            </div>
             </form>
-            <p>Already have an account? <a href="#">Log in</a></p>
+            <div class="login-link">Already have an account?&nbsp;
+                <a href="#">Log in</a></div>
         </div>
     </div>
 </body>

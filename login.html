@@ -4,26 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SANGKAP MPC - Log In</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/css/login.css">
 </head>
 <body>
     <div class="container">
         <div class="logo-section">
-            <img src="logo.png" alt="SANGKAP MPC Logo">
+            <img src="/assets/logo.jpg" alt="SANGKAP MPC Logo">
         </div>
         <div class="login-section">
-            <h2>LOG IN</h2>
-            <form>
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" required>
-                
-                <a href="#" class="forgot-password">Forgot password?</a>
-                <button type="submit">Log In</button>
+            <h1>LOGIN</h1>
+            <form method ="post">
+                <div class="txt_field">
+                    <input type="text" required>
+                    <label>Enter Email Address:</label>
+                </div>
+                <div class="txt_field">
+                    <input type="password" required>
+                    <label>Enter Password:</label>
+                </div>
+                    <div class="forgot-password">Forgot Password?</div>
+                <div class="button"> 
+                    <button type="submit">Log In</button>
+                </div> 
+                    <div class="signup-link">Not a member? &nbsp;
+                        <a href="#">Signup</a>
+                    </div>
             </form>
-            <p>I don't have an account</p>
         </div>
     </div>
 </body>
