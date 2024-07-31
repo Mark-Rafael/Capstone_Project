@@ -10,20 +10,20 @@
     <div class="container">
         <aside class="sidebar">
             <div class="profile">
-                <img src="profile.png" alt="Profile Picture">
-                <p>De Castro, Mark Rafael V.</p>
+                <img src="/assets/profile-sample.png" alt="Profile Picture">
             </div>
+            <div class="member-name">De Castro, Mark Rafael V.</div>
             <nav>
                 <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">MEMBER APPLICATION</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Member Application</a></li>
                 </ul>
             </nav>
         </aside>
         <main>
             <header>
                 <div class="logo">
-                    <img src="logo.png" alt="Cooperative Logo">
+                    <img src="/assets/logo.jpg" alt="Cooperative Logo">
                 </div>
                 <div class="header-text">
                     <h1>SANGKAP Multi-Purpose Cooperative</h1>
@@ -31,29 +31,45 @@
                     <p>Tel. No. (043) 757-0265</p>
                 </div>
             </header>
+            <h2>MEMBERSHIP INFORMATION</h2>
             <form class="membership-form">
-                <h2>MEMBERSHIP INFORMATION</h2>
+                <div class="form-group-row">
                 <div class="form-group">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name">
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" id="last-name" name="last_name">
                 </div>
                 <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email">
+                    <label for="first-name">First Name:</label>
+                    <input type="text" id="first-name" name="first_name">
                 </div>
                 <div class="form-group">
-                    <label>Civil Status:</label>
-                    <div class="checkbox-group">
-                        <label><input type="checkbox" name="status" value="single"> Single</label>
-                        <label><input type="checkbox" name="status" value="married"> Married</label>
-                        <label><input type="checkbox" name="status" value="widower"> Widower/Widow</label>
+                    <label for="middle-name">Middle Name:</label>
+                    <input type="text" id="middle-name" name="middle_name">
+                </div>
+                <div class="form-group">
+                    <label for="name-ext">Ext. Name</label>
+                    <input type="text" id="ext-name" name="ext_name">
+                </div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="@gmail.com">
+                </div>
+                <div class="form-group-row">
+                    <div class="form-group">
+                        <label>Civil Status:</label>
+                        <div class="checkbox-group">
+                            <label><input type="checkbox" name="status" value="single"> Single</label>
+                            <label><input type="checkbox" name="status" value="married"> Married</label>
+                            <label><input type="checkbox" name="status" value="widower"> Widower/Widow</label>
+                        </div>
                     </div>
-                </div>
-                <div class="form-group">
-                    <label>Sex:</label>
-                    <div class="checkbox-group">
-                        <label><input type="checkbox" name="sex" value="male"> Male</label>
-                        <label><input type="checkbox" name="sex" value="female"> Female</label>
+                    <div class="form-group">
+                        <label>Sex:</label>
+                        <div class="checkbox-group">
+                            <label><input type="checkbox" name="sex" value="male"> Male</label>
+                            <label><input type="checkbox" name="sex" value="female"> Female</label>
+                        </div>
                     </div>
                 </div>
                 <div class="form-group">
@@ -65,24 +81,63 @@
                     <input type="date" id="date_of_birth" name="date_of_birth">
                 </div>
                 <div class="form-group">
-                    <label for="education">Educational Attainment:</label>
-                    <input type="text" id="education" name="education">
+                    <label for="educational-attainment">Educational Attainment</label>
+                    <select id="educational-attainment" name="educational_attainment" class="form-control">
+                        <option value="">Select an option</option>
+                        <option value="no_schooling">Postgraduate</option>
+                        <option value="some_schooling">College Graduate</option>
+                        <option value="high_school_graduate">High School Graduate</option>
+                        <option value="college_graduate">Elementary Graduate</option>
+                        <option value="postgraduate">N/A</option>
+                    </select>
                 </div>
                 <div class="form-group">
-                    <label for="occupation">Occupation:</label>
+                    <label for="occupation">Work/Occupation:</label>
                     <input type="text" id="occupation" name="occupation">
                 </div>
-                <div class="form-group">
-                    <label for="permanent_address">Permanent Address:</label>
-                    <input type="text" id="permanent_address" name="permanent_address">
-                    <input type="text" id="permanent_zip" name="permanent_zip" placeholder="Zip Code">
-                    <input type="text" id="permanent_tel" name="permanent_tel" placeholder="Tel. No./Active No.">
+                <div class="form-group-row">
+                    <div class="form-group">
+                        <label for="permanent-lot-no">Lot No.:</label>
+                        <input type="text" id="permanent-lot-no" name="permanent_lot_no">
+                    </div>
+                    <div class="form-group">
+                        <label for="permanent-barangay">Barangay:</label>
+                        <input type="text" id="permanent-barangay" name="permanent_barangay">
+                    </div>
+                    <div class="form-group">
+                        <label for="permanent-municipality">Municipality:</label>
+                        <input type="text" id="permanent-municipality" name="permanent_municipality">
+                    </div>
+                    <div class="form-group">
+                        <label for="permanent-province">Province:</label>
+                        <input type="text" id="permanent-province" name="permanent_province">
+                    </div>
+                    <div class="form-group">
+                        <label for="permanent-zip">Zip Code:</label>
+                        <input type="text" id="permanent-zip" name="permanent_zip">
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="present_address">Present Address:</label>
-                    <input type="text" id="present_address" name="present_address">
-                    <input type="text" id="present_zip" name="present_zip" placeholder="Zip Code">
-                    <input type="text" id="present_tel" name="present_tel" placeholder="Tel. No./Active No.">
+                <div class="form-group-row">
+                    <div class="form-group">
+                        <label for="present-lot-no">Lot No.:</label>
+                        <input type="text" id="present-lot-no" name="present_lot_no">
+                    </div>
+                    <div class="form-group">
+                        <label for="present-barangay">Barangay:</label>
+                        <input type="text" id="present-barangay" name="present_barangay">
+                    </div>
+                    <div class="form-group">
+                        <label for="present-municipality">Municipality:</label>
+                        <input type="text" id="present-municipality" name="present_municipality">
+                    </div>
+                    <div class="form-group">
+                        <label for="present-province">Province:</label>
+                        <input type="text" id="present-province" name="present_province">
+                    </div>
+                    <div class="form-group">
+                        <label for="present-zip">Zip Code:</label>
+                        <input type="text" id="present-zip" name="present_zip">
+                    </div>
                 </div>
                 <div class="form-group">
                     <label for="position">Position/Region:</label>
